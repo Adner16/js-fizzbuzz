@@ -6,17 +6,20 @@ console.log('JS OK')
 3 assegnare valori diversi ai numeri
 */
 
-
+let risultato;
 
 for (let i = 1; i <= 100; i++){
-    console.log (i);
-}
-if ( %3 === 0) {
-    i = 'Fizz'
-}
-if else ( %5 === 0) {
-    i = 'Buzz'
-}
-if else ( %3 %5 === 0) {
-    i = 'FizzBuzz'
+
+    if ( i%3 === 0 && i%5 === 0) {
+        risultato = 'FizzBuzz';
+    } else if ( i%3 === 0) {
+        risultato = 'Fizz';
+    } else if ( i%5 === 0) {
+        risultato = 'Buzz';
+    } else {
+        risultato = i;
+    }
+    console.log(risultato);
+
+    
 }
