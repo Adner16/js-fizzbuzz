@@ -18,8 +18,10 @@ for (let i = 1; i <= 100; i++){
         risultato = 'Buzz';
     } else {
         risultato = i;
+       
     }
     console.log(risultato);
-
-    
+    const displayElement = document.getElementById ('result-display');
+    displayElement.innerHTML = risultato;
+   
 }
